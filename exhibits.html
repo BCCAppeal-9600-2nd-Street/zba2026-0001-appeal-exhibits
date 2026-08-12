@@ -213,5 +213,23 @@ tbody tr:hover{background:var(--color-surface-2)}
   if(t){t.addEventListener('click',function(){var c=r.getAttribute('data-theme')==='dark'?'light':'dark';setTheme(c)})}
 })();
 </script>
+<!-- Privacy-friendly analytics: GoatCounter (no cookies, no personal data). Subdomain: zcoa2026-0013 -->
+<script data-goatcounter="https://zcoa2026-0013.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<noscript><img src="https://zcoa2026-0013.goatcounter.com/count?p=/noscript" alt="" style="display:none"></noscript>
+<!-- Document click tracking — logs each PDF/link open as a GoatCounter event -->
+<script>
+window.addEventListener('load',function(){
+  document.querySelectorAll('a[href]').forEach(function(a){
+    a.addEventListener('click',function(){
+      if(window.goatcounter){
+        var path=a.getAttribute('href');
+        var label=a.textContent.trim().substring(0,60);
+        window.goatcounter.count({path:'/click'+path,title:label,event:true});
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
