@@ -281,31 +281,28 @@ tbody tr:hover{background:var(--color-surface-2)}
         <a class="doc-link" href="docs/01-Appeal-Brief-Page1-Filed-Stamped.pdf" target="_blank" rel="noopener">Filed &amp; Stamped Page 1 →</a>
       </div>
     </div>
-    <div class="doc-card" style="border-color:var(--color-accent);background:var(--color-accent-highlight)">
-      <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg>
-      <h3>the Appeal Coalition&rsquo;s Amendment and Errata to Appeal Brief</h3>
-      <p>Filed and stamped July 22, 2026. Corrects citation errors in the Brief&rsquo;s exhibit list and body to conform descriptions and record citations to the exhibits actually filed. Corrections include: Exhibit 19 conformed to the Murphy Express Traffic Study (Terry O. Brown, Professional Engineer (P.E.)); Exhibit 11 updated to official certified hearing transcript (Julian Serna, Certified Court Reporter (CCR)); Exhibit 26 protest-petition radius clarified (100 ft threshold, 500 ft notice area); packet page citations corrected (Pg. 923 to Pg. 922); case numbers standardized to BA2026-0001; acreage corrected to approximately 3.90 acres per County receipt; and stormwater runoff figure revised to 70,000&ndash;85,000 gallons per 1-inch rain event. No change to the grounds for appeal or relief requested.</p>
-      <span class="view">View PDF &rarr;</span>
-      <div class="doc-links">
-        <a class="doc-link" href="docs/05-Amendment-and-Errata.pdf" target="_blank" rel="noopener">Open Amendment &rarr;</a>
+    <div class="errata-tabs" style="border:1px solid var(--color-accent);border-radius:var(--radius-md);overflow:hidden;background:var(--color-accent-highlight)">
+      <div class="errata-tab-bar" style="display:flex;gap:0;border-bottom:2px solid var(--color-accent)">
+        <button class="errata-tab active" onclick="errataTab(0)" style="flex:1;padding:var(--space-3) var(--space-4);border:none;background:var(--color-accent);color:#fff;font-family:var(--font-body);font-size:var(--text-xs);font-weight:600;cursor:pointer;transition:background var(--transition-interactive)">Amendment &amp; Errata (Jul 22)</button>
+        <button class="errata-tab" onclick="errataTab(1)" style="flex:1;padding:var(--space-3) var(--space-4);border:none;background:transparent;color:var(--color-accent);font-family:var(--font-body);font-size:var(--text-xs);font-weight:600;cursor:pointer;transition:background var(--transition-interactive)">Acreage Reconciliation (Aug)</button>
+        <button class="errata-tab" onclick="errataTab(2)" style="flex:1;padding:var(--space-3) var(--space-4);border:none;background:transparent;color:var(--color-accent);font-family:var(--font-body);font-size:var(--text-xs);font-weight:600;cursor:pointer;transition:background var(--transition-interactive)">Correction Sheet (Aug 26)</button>
       </div>
-    </div>
-    <div class="doc-card" style="border-color:var(--color-accent);background:var(--color-accent-highlight)">
-      <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg>
-      <h3>the Appeal Coalition&rsquo;s Errata, Clarification, and Complete County-Acreage Reconciliation</h3>
-      <p>Filed August 2026. Corrects a typographical error in the case number (ZA2026-0034 corrected to ZA2026-0024) and provides a complete 100-foot buffer acreage reconciliation for the 20% Protest Petition. The corrected calculation incorporates the Abeyta parcel (0.59 County acres), updating the signed total from 10.13 to 10.72 acres out of 16.84 total acres in the 100-foot buffer (63.66%), exceeding the 20% threshold by 7.352 acres. Includes supplemental certifications of protest from Angie E. Duran (Form A) and Nicole Parra / Canyon Stone &amp; Gravel LLC (Form B).</p>
-      <span class="view">View PDF &rarr;</span>
-      <div class="doc-links">
-        <a class="doc-link" href="docs/Errata-Clarification-Acre-Reconciliation.pdf" target="_blank" rel="noopener">Open Errata &amp; Reconciliation &rarr;</a>
-      </div>
-    </div>
-    <div class="doc-card" style="border-color:var(--color-accent);background:var(--color-accent-highlight)">
-      <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg>
-      <h3>the Appeal Coalition&rsquo;s Errata and Correction Sheet</h3>
-      <p>Filed August 26, 2026. Corrects scrivener's errors on the supplemental cover sheet accompanying the Certification of Opposition (20% Rule Request) submitted July 20, 2026. Correction No. 1: case number corrected from ZA2026-0034 to ZA2026-0024 in two locations. Correction No. 2: statement of the action being protested clarified to accurately describe the County Planning Commission (CPC)&rsquo;s July 1, 2026 decision (Notice dated July 7, 2026) upholding the Zoning Administrator (ZA)&rsquo;s conditional use permit approval. Clarifies that corrections are clerical only &mdash; no signatures, parcels, acreage, or substance of the protest is changed.</p>
-      <span class="view">View PDF &rarr;</span>
-      <div class="doc-links">
-        <a class="doc-link" href="docs/Errata-Correction-Sheet.pdf" target="_blank" rel="noopener">Open Correction Sheet &rarr;</a>
+      <div class="errata-panel" style="padding:var(--space-5) var(--space-6)">
+        <div class="errata-content active" style="display:block">
+          <h3 style="font-family:var(--font-display);font-size:var(--text-lg);margin-bottom:var(--space-2)">the Appeal Coalition&rsquo;s Amendment and Errata to Appeal Brief</h3>
+          <p style="font-size:var(--text-sm);line-height:1.6;margin-bottom:var(--space-4)">Filed and stamped July 22, 2026. Corrects citation errors in the Brief&rsquo;s exhibit list and body to conform descriptions and record citations to the exhibits actually filed. Corrections include: Exhibit 19 conformed to the Murphy Express Traffic Study (Terry O. Brown, Professional Engineer (P.E.)); Exhibit 11 updated to official certified hearing transcript (Julian Serna, Certified Court Reporter (CCR)); Exhibit 26 protest-petition radius clarified (100 ft threshold, 500 ft notice area); packet page citations corrected (Pg. 923 to Pg. 922); case numbers standardized to BA2026-0001; acreage corrected to approximately 3.90 acres per County receipt; and stormwater runoff figure revised to 70,000&ndash;85,000 gallons per 1-inch rain event. No change to the grounds for appeal or relief requested.</p>
+          <a class="doc-link" href="docs/05-Amendment-and-Errata.pdf" target="_blank" rel="noopener" style="display:inline-block;padding:var(--space-2) var(--space-4);background:var(--color-accent);color:#fff;border-radius:var(--radius-sm);text-decoration:none;font-size:var(--text-sm);font-weight:600">Open Amendment &rarr;</a>
+        </div>
+        <div class="errata-content" style="display:none">
+          <h3 style="font-family:var(--font-display);font-size:var(--text-lg);margin-bottom:var(--space-2)">the Appeal Coalition&rsquo;s Errata, Clarification, and Complete County-Acreage Reconciliation</h3>
+          <p style="font-size:var(--text-sm);line-height:1.6;margin-bottom:var(--space-4)">Filed August 2026. Corrects a typographical error in the case number (ZA2026-0034 corrected to ZA2026-0024) and provides a complete 100-foot buffer acreage reconciliation for the 20% Protest Petition. The corrected calculation incorporates the Abeyta parcel (0.59 County acres), updating the signed total from 10.13 to 10.72 acres out of 16.84 total acres in the 100-foot buffer (63.66%), exceeding the 20% threshold by 7.352 acres. Includes supplemental certifications of protest from Angie E. Duran (Form A) and Nicole Parra / Canyon Stone &amp; Gravel LLC (Form B).</p>
+          <a class="doc-link" href="docs/Errata-Clarification-Acre-Reconciliation.pdf" target="_blank" rel="noopener" style="display:inline-block;padding:var(--space-2) var(--space-4);background:var(--color-accent);color:#fff;border-radius:var(--radius-sm);text-decoration:none;font-size:var(--text-sm);font-weight:600">Open Errata &amp; Reconciliation &rarr;</a>
+        </div>
+        <div class="errata-content" style="display:none">
+          <h3 style="font-family:var(--font-display);font-size:var(--text-lg);margin-bottom:var(--space-2)">the Appeal Coalition&rsquo;s Errata and Correction Sheet</h3>
+          <p style="font-size:var(--text-sm);line-height:1.6;margin-bottom:var(--space-4)">Filed August 26, 2026. Corrects scrivener's errors on the supplemental cover sheet accompanying the Certification of Opposition (20% Rule Request) submitted July 20, 2026. Correction No. 1: case number corrected from ZA2026-0034 to ZA2026-0024 in two locations. Correction No. 2: statement of the action being protested clarified to accurately describe the County Planning Commission (CPC)&rsquo;s July 1, 2026 decision (Notice dated July 7, 2026) upholding the Zoning Administrator (ZA)&rsquo;s conditional use permit approval. Clarifies that corrections are clerical only &mdash; no signatures, parcels, acreage, or substance of the protest is changed.</p>
+          <a class="doc-link" href="docs/Errata-Correction-Sheet.pdf" target="_blank" rel="noopener" style="display:inline-block;padding:var(--space-2) var(--space-4);background:var(--color-accent);color:#fff;border-radius:var(--radius-sm);text-decoration:none;font-size:var(--text-sm);font-weight:600">Open Correction Sheet &rarr;</a>
+        </div>
       </div>
     </div>
     <div class="doc-card">
@@ -453,6 +450,14 @@ window.addEventListener('load',function(){
     });
   });
 });
+</script>
+<script>
+function errataTab(n){
+  var tabs=document.querySelectorAll('.errata-tab');
+  var panels=document.querySelectorAll('.errata-content');
+  tabs.forEach(function(t,i){t.style.background=i===n?'var(--color-accent)':'transparent';t.style.color=i===n?'#fff':'var(--color-accent)';t.classList.toggle('active',i===n);});
+  panels.forEach(function(p,i){p.style.display=i===n?'block':'none';});
+}
 </script>
 </body>
 </html>
